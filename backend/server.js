@@ -12,7 +12,7 @@ app.use(exp.json());
 app.use('/employee-api', employeeApp);
 
 const port = process.env.PORT || 4000;
-const mongoUrl = process.env.DB_URL || "mongodb://127.0.0.1:27017/employeeDB";
+const mongoUrl = process.env.DB_URL || "mongodb+srv://mrudhu2306_db_user:mrudhula@cluster0.4kspcxl.mongodb.net/employeeDB?appName=Cluster0";
 
 async function connectDB(){
     try{
