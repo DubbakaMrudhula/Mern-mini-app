@@ -1,6 +1,7 @@
- import exp from 'express'
- import {connect} from 'mongoose'
-  import { employeeApp } from './API/Employeeapi.js';
+import 'dotenv/config';
+import exp from 'express'
+import {connect} from 'mongoose'
+import { employeeApp } from './API/Employeeapi.js';
 import cors from 'cors'
 //cross origin resource sharing 
 const app=exp()
