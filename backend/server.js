@@ -11,9 +11,12 @@ app.use(exp.json());
 //forward req to userApp if path starts with /user-api
 app.use('/employee-api', employeeApp);
 
-const port = process.env.PORT || 4000;
-const mongoUrl = process.env.DB_URL || "mongodb+srv://mrudhu2306_db_user:mrudhula@cluster0.4kspcxl.mongodb.net/employeeDB?appName=Cluster0";
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully!");
+});
 
+const port = process.env.PORT || 4000;
+const mongoUrl = process.env.DB_URL;
 async function connectDB(){
     try{
         await connect(mongoUrl);
