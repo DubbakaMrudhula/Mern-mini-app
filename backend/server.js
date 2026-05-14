@@ -7,7 +7,7 @@ import cors from 'cors'
 const app=exp()
 
 app.use(cors({
-  origin: ["https://mern-mini-app1.vercel.app","https://mern-mini-app.vercel.app/"],
+  origin: ["https://mern-mini-app1.vercel.app", "https://mern-mini-app.vercel.app"],
   credentials: true
 }));
 app.use(exp.json());
