@@ -6,7 +6,10 @@ import cors from 'cors'
 //cross origin resource sharing 
 const app=exp()
 
-app.use(cors());
+app.use(cors({
+  origin: "https://mern-mini-app1.vercel.app",
+  credentials: true
+}));
 app.use(exp.json());
 //forward req to userApp if path starts with /user-api
 app.use('/employee-api', employeeApp);
