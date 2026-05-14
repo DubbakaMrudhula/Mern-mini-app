@@ -24,7 +24,7 @@ app.use(cors({
 }));
 
 // Pre-flight requests handling for all routes
-app.options('*', cors());
+app.options('(.*)', cors());
 
 app.use(exp.json());
 
