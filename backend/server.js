@@ -7,7 +7,11 @@ import cors from 'cors'
 const app=exp()
 
 // Robust CORS configuration
-const allowedOrigins = ["https://mern-mini-app1.vercel.app", "https://mern-mini-app.vercel.app"];
+const allowedOrigins = [
+  "https://mern-mini-app1.vercel.app", 
+  "https://mern-mini-app.vercel.app",
+  "https://mini-mern-app.vercel.app"
+];
 app.use(cors({
   origin: function (origin, callback) {
     // Allow requests with no origin (like curl requests)
